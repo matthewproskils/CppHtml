@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="function" id="print" />
+    </head>
+
+    <div>
+        <if left="15" op="==" right="15">
+            <call id="print"><ar>Hello World!</ar></call>
+            
+            <else>
+                <jump id="end"></jump>
+            </else>
+        </if>
+
+        <call id="print"><ar>Oof</ar></call>
+
+        <label id="end"></label>
+
+        <exit>0</exit>
+    </div>
+</html>
